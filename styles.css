@@ -1,0 +1,51 @@
+/* Item 1 e 6: Apliquei o fundo verde na div pai e defini a cor branca para os textos dentro dela */
+.container {
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+}
+
+/* Item 2: Defini uma cor em hexadecimal para o fundo do cabeçalho e centralizei todos os textos */
+.cabecalho {
+    background-color: #334455;
+    text-align: center;
+}
+
+/* Item 3: Criei esta classe para o título principal, mudando a cor para amarelo, aplicando bold e o tamanho de 32px */
+.titulo-principal {
+    color: yellow;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Item 4: Criei esta classe para o subtítulo do cabeçalho e mudei a cor dele para cinza claro */
+.subtitulo-cabecalho {
+    color: lightgray;
+}
+
+/* Item 5 e 7: Alterei o fundo da div conteudo para cinza e apliquei a cor azul diretamente nela para os textos herdarem */
+.conteudo {
+    background-color: gray;
+    color: blue;
+}
+
+/* Primeiro Desafio: Criei esta regra usando a setinha (>) para que apenas os parágrafos filhos diretos da div conteudo fiquem com a cor #E4005A e tamanho de 42px */
+.conteudo > p {
+    color: #E4005A;
+    font-size: 42px;
+}
+
+/* Desafio Plus 1: Criei esta classe específica para o terceiro parágrafo que adicionei no HTML, deixando-o roxo e com efeito subscrito */
+.terceiro-paragrafo {
+    color: purple;
+    vertical-align: sub;
+    font-size: 24px;
+}
+
+/* Desafio Plus 2: Pesquisei como detectar o tamanho da tela no CSS e usei o @media para mudar o fundo para azul claro quando a janela tiver menos de 480px */
+@media (max-width: 480px) {
+    .container {
+        background-color: #ADD8E6;
+    }
+}
